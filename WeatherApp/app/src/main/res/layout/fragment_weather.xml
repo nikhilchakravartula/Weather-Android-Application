@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        tools:context=".WeatherFragment"
+        android:background="@color/weather_fragment_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <include
+        layout="@layout/weather_card_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+    </include>
+    <include layout="@layout/weather_card_fields"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+    </include>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/weather_card_week_lv"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:transcriptMode="normal"/>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/rem_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/rem_fav"
+        android:contentDescription="Favourites"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/add_fav"
+        android:contentDescription="Favourites"
+        android:layout_marginBottom="40dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/white"
+        android:elevation="0dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

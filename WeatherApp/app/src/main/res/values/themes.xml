@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.WeatherApp" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/white</item>
+<!--        <item name="colorPrimaryVariant">@color/white</item>-->
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Customize your theme here. -->
+
+
+
+<!--        <item name="autoCompleteTextViewStyle">@style/myAutoCompleteTextViewStyle-->
+<!--        </item>-->
+<!--        <item name="textAppearanceSearchResultTitle">@style/mySearchResult</item>-->
+
+
+
+    </style>
+
+
+<!--    <style name="myAutoCompleteTextViewStyle" parent="Widget.AppCompat.AutoCompleteTextView">-->
+<!--        <item name="android:popupBackground">@color/purple_500</item>-->
+<!--        <item name="android:textColor">@color/purple_500</item>-->
+<!--    </style>-->
+<!--    <style name="mySearchResult" parent="TextAppearance.AppCompat.SearchResult.Title">-->
+<!--        <item name="android:textColor">@color/purple_500</item>-->
+<!--    </style>-->
+
+
+
+</resources>

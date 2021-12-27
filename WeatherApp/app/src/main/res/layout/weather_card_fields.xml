@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/weather_card_fields"
+    android:layout_gravity="center"
+    android:background="@color/card_bg"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+
+    <include layout="@layout/weather_card_field"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/humidity"/>
+
+    <include layout="@layout/weather_card_field"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/wind_speed"/>
+
+    <include layout="@layout/weather_card_field"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/visibility"/>
+
+    <include layout="@layout/weather_card_field"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pressure"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
